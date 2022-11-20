@@ -1,0 +1,19 @@
+---upload my file
+폴더에서 Git Bash here
+git init : 프로젝트 폴더에서 git 초기화, 버전관리를 시작함
+- 이 때 해당 프로젝트 디렉토리로 위치가 알맞게 되어있는지 확인한다.
+git add 파일이름  or git add . : git이 관리하도록 파일을 추가, 버전 관리 중인 파일이 변경되었을 때 사용
+
+git config --global user.name '이름'
+git config --global user.email '이메일'
+=> 최초 1번, 커밋에 남길 이름과 이메일을 설정하는 것
+
+git commit -m "메시지" : 버전을 만든 후 커밋 올림 
+git log : 커밋 내용 확인, -p 옵션 사용 시 커밋 간 파일의 바뀐 내용 보여줌
+
+git push : 원격 저장소에 푸시함
+
+
+[커밋 되돌리기]
+git reset 커밋ID --hard : 원격 저장소에는 리셋 사용 불가, revert사용해야함
+
